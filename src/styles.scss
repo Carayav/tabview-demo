@@ -26,3 +26,39 @@ body {
 .green a {
   background-color: green !important;
 }
+
+$InputRequeridoFondo: lavenderblush;
+$InputRequeridoBorde: #a94442;
+
+input {
+  &.ng-invalid {
+    &.ng-touched,
+    &.ng-dirty {
+      input,
+      .ui-dropdown-label,
+      .ui-dropdown-trigger,
+      .ui-dropdown-trigger-icon,
+      .ui-dropdown.ui-widget {
+        background-color: $InputRequeridoFondo !important;
+        border-color: $InputRequeridoBorde !important;
+      }
+
+      .ui-dropdown-trigger-icon {
+        color: $InputRequeridoBorde !important;
+      }
+
+      input + button {
+        background-color: $InputRequeridoBorde !important;
+        color: $InputRequeridoFondo !important;
+      }
+
+      background-color: $InputRequeridoFondo !important;
+      border-color: $InputRequeridoBorde !important;
+    }
+  }
+}
+
+li.ng-invalid a {
+  background-color: $InputRequeridoFondo !important;
+  border-color: $InputRequeridoBorde !important;
+}

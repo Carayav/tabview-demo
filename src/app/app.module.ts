@@ -94,6 +94,7 @@ import { AnimateModule } from 'primeng/animate';
 import { CardModule } from 'primeng/card';
 import { BlockUIModule } from 'primeng/blockui';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { FormSubmitDirective } from './form-submit.directive';
 
 
 @NgModule({
@@ -191,7 +192,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     AnimateModule,
     CardModule,
     RouterModule.forRoot([{ path: '', component: TabViewBasicDemo }])],
-    declarations: [ TabViewBasicDemo ],
+    declarations: [ TabViewBasicDemo, FormSubmitDirective ],
     bootstrap: [ TabViewBasicDemo ],
     providers: [  ]
 })

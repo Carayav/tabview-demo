@@ -17,5 +17,8 @@
         "es2022",
         "dom"
       ]
+    },
+    "angularCompilerOptions": {
+      "strictTemplates": true,
     }
 }
